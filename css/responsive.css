@@ -6,12 +6,12 @@ body{
 }
 
 #page{
-    background-color: white;
+    background-color: pink;
 }
 
 #header, #footer{
-    background-color: #1c345a;
-    color: white;
+    background-color: red;
+    color: green;
 
 }
 
@@ -21,7 +21,7 @@ body{
 }
 
 #menu ul li a:link{
-    color: white;
+    color: blue;
 }
 
 .validator{

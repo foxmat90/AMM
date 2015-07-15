@@ -54,7 +54,7 @@ if (!$vd->isJson()) {
                     <!--  header -->
                     <div id="header">
                         <div id="logo">
-                            <h1>EsAMMi</h1>
+                            <h1>fanculo</h1>
                         </div>
 
                         <!-- select per la versione del menu mobile -->

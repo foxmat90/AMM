@@ -1,24 +1,8 @@
-<h2 class="icon-title">Amministratore</h2>
+<h2 class="icon-title">Docente</h2>
 <ul>
-    <li ><a  href="amministratore">Home</a></li>
-    <li ><a href="amministratore/docenti_cerca" >Docenti</a></li>
-    <li ><a href="amministratore/studenti_cerca" >Studenti</a></li>
-    <li ><a  href="amministratore/dipartimenti">Dipartimenti</a></li>
-    <li ><a  href="amministratore/cdl">CdL</a></li>
-    <li ><a href="amministratore/user">Nuovo Utente</a></li>
-    <li ><a  href="amministratore/esami">Elenco Esami</a></li>
-
+    <li class="<?= $vd->getSottoPagina() == 'home' || $vd->getSottoPagina() == null ? 'current_page_item' : ''?>"><a href="docente/home<?= $vd->scriviToken('?')?>">Home</a></li>
+    <li class="<?= $vd->getSottoPagina() == 'anagrafica' ? 'current_page_item' : '' ?>"><a href="docente/anagrafica<?= $vd->scriviToken('?')?>">Anagrafica</a></li>
+    <li class="<?= $vd->getSottoPagina() == 'appelli' ? 'current_page_item' : '' ?>"><a href="docente/appelli<?= $vd->scriviToken('?')?>">Appelli</a></li>
+    <li class="<?= $vd->getSottoPagina() == 'reg_esami' ? 'current_page_item' : '' ?>"><a href="docente/reg_esami<?= $vd->scriviToken('?')?>">Registrazione Esami</a></li>
+    <li class="<?= $vd->getSottoPagina() == 'el_esami' ? 'current_page_item' : '' ?>"><a href="docente/el_esami<?= $vd->scriviToken('?')?>">Elenco Esami</a></li>
 </ul>
-
-<?php
-switch ($user->getRuolo()) {
-    case User::Studente:
-        include_once 'view/studente/leftBar.php';
-        break;
-    case User::Docente:
-        include_once 'view/docente/leftBar.php';
-        break;
-}
-?>
-
-

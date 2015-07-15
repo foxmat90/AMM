@@ -213,8 +213,6 @@ class User {
         switch ($ruolo) {
             case self::Docente:
             case self::Studente:
-				case self::Utente:
-				case self::Amministratore:
                 $this->ruolo = $ruolo;
                 return true;
             default:

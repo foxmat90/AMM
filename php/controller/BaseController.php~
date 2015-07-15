@@ -158,7 +158,7 @@ class BaseController {
      * @param ViewDescriptor $vd il descrittore della vista
      */
     protected function showHomeUtente($vd) {
-        $user = UserFactory::instance()->cercaUtentePerId($_SESSION[self::user], $_SESSION[self::role]);if($user==null) echo "  NULL  ";
+        $user = UserFactory::instance()->cercaUtentePerId($_SESSION[self::user], $_SESSION[self::role]);
         switch ($user->getRuolo()) {
             case User::Studente:
                 $this->showHomeStudente($vd);

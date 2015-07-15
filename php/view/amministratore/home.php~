@@ -1,6 +1,6 @@
 <h2 class="icon-title" id="h-home">Pannello di Controllo</h2>
 <p>
-    Benvenuto, Amministratore. 
+    Benvenuto, Davide. 
 </p>
 <p>
     Scegli una fra le seguenti sezioni:

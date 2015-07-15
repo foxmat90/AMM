@@ -606,7 +606,7 @@ class UserFactory {
         $utente->setCodiceSegreto($row['utenti_codice_segreto']);
         
        
-        return $utente;
+        return $amministratore;
     }
 
 
